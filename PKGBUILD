@@ -13,7 +13,7 @@ optdepends=('firefox: Firefox icin gecici kurulum'
             'vivaldi: Vivaldi icin otomatik kurulum')
 install="${pkgname}.install"
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('f5dff2f97c66e1058423a990ccadaa1a1c60be7e46e792b7cb335dfa68ad6746')
+sha256sums=('2592e090d8bc4a84840a73d6c0102ea3d551d0c2e703feb2e9f899afc4e8a052')
 
 package() {
   cd "${_repo}-${pkgver}"
