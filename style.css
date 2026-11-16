@@ -1,0 +1,28 @@
+/* Eklenti kapalıysa (html[data-yna="off"]) hiçbir şey gizlenmez. */
+html:not([data-yna="off"]) :is(
+  #player-ads,
+  #masthead-ad,
+  ytd-mealbar-promo-renderer,
+  ytd-ad-slot-renderer,
+  ytd-in-feed-ad-layout-renderer,
+  ytd-banner-promo-renderer,
+  ytd-promoted-sparkles-web-renderer,
+  ytd-promoted-video-renderer,
+  ytd-display-ad-renderer,
+  ytd-companion-slot-renderer,
+  ytd-action-companion-ad-renderer,
+  ytd-statement-banner-renderer,
+  ytd-merch-shelf-renderer,
+  .ytp-ad-overlay-container,
+  .ytp-ad-image-overlay,
+  .ytp-ad-module,
+  ytd-rich-item-renderer:has(ytd-ad-slot-renderer),
+  ytd-search-pyv-renderer,
+  ytd-promoted-sparkles-text-search-renderer,
+  ytd-brand-video-singleton-renderer,
+  ytd-brand-video-shelf-renderer,
+  ytd-primetime-promo-renderer,
+  ytd-enforcement-message-view-model
+) {
+  display: none !important;
+}

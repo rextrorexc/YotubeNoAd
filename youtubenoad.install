@@ -1,0 +1,10 @@
+post_install() {
+  echo "==> YotubeNoAd kuruldu. Tarayicilara eklemek icin calistirin:"
+  echo "      youtubenoad-install"
+  echo "    Tek tarayici icin: youtubenoad-install firefox | youtubenoad-install chromium"
+}
+
+post_upgrade() {
+  echo "==> Guncellendi. Tarayicidaki eklentiyi yenilemek icin tekrar calistirin:"
+  echo "      youtubenoad-install"
+}

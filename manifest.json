@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "YotubeNoAd",
+  "version": "1.5",
+  "description": "Basit YouTube reklam engelleyici",
+  "minimum_chrome_version": "111",
+  "permissions": ["declarativeNetRequest", "storage"],
+  "background": { "service_worker": "background.js", "scripts": ["background.js"] },
+  "browser_specific_settings": {
+    "gecko": { "id": "yotubenoad@local", "strict_min_version": "128.0" }
+  },
+  "action": { "default_popup": "popup.html", "default_title": "YotubeNoAd" },
+  "declarative_net_request": {
+    "rule_resources": [
+      { "id": "ads", "enabled": true, "path": "rules.json" }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://*.youtube-nocookie.com/*"],
+      "js": ["inject.js"],
+      "world": "MAIN",
+      "all_frames": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.youtube.com/*", "*://*.youtube-nocookie.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ]
+}
