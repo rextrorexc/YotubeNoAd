@@ -16,7 +16,7 @@ youtubenoad-install
 PowerShell'i aç ve şunu yapıştır:
 
 ```powershell
-irm https://raw.githubusercontent.com/rextroanticheat/YotubeNoAd/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/rextrorexc/YotubeNoAd/main/install.ps1 | iex
 ```
 
 Ya da projeyi indirip `install.bat` dosyasına çift tıkla. Betik dosyaları `%LOCALAPPDATA%\YotubeNoAd` klasörüne kopyalar, yolu panoya alır ve Chrome, Edge, Brave veya Firefox'un eklenti sayfasını açar. Açılan sayfada **Geliştirici modu** > **Paketlenmemiş öğe yükle** ile yolu yapıştırman yeterli (Firefox'ta **Geçici Eklenti Yükle** ile `manifest.json`).
@@ -24,7 +24,7 @@ Ya da projeyi indirip `install.bat` dosyasına çift tıkla. Betik dosyaları `%
 ## Kaynaktan kurulum (Linux)
 
 ```bash
-git clone https://github.com/rextroanticheat/YotubeNoAd
+git clone https://github.com/rextrorexc/YotubeNoAd
 cd YotubeNoAd
 ./install.sh
 ```

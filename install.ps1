@@ -1,8 +1,8 @@
 # YotubeNoAd Windows kurulumu (Chrome, Edge, Brave, Firefox)
-# Tek satirla:  irm https://raw.githubusercontent.com/rextroanticheat/YotubeNoAd/main/install.ps1 | iex
+# Tek satirla:  irm https://raw.githubusercontent.com/rextrorexc/YotubeNoAd/main/install.ps1 | iex
 $ErrorActionPreference = "Stop"
 
-$zipUrl = "https://github.com/rextroanticheat/YotubeNoAd/archive/refs/heads/main.zip"
+$zipUrl = "https://github.com/rextrorexc/YotubeNoAd/archive/refs/heads/main.zip"
 $dest   = Join-Path $env:LOCALAPPDATA "YotubeNoAd"
 $files  = @("manifest.json","background.js","content.js","inject.js","popup.html","popup.js","rules.json","style.css")
 

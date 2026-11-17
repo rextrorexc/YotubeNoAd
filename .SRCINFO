@@ -2,7 +2,7 @@ pkgbase = youtubenoad
 	pkgdesc = Basit YouTube reklam engelleyici tarayici eklentisi (Chromium ve Firefox)
 	pkgver = 1.5
 	pkgrel = 1
-	url = https://github.com/rextroanticheat/YotubeNoAd
+	url = https://github.com/rextrorexc/YotubeNoAd
 	install = youtubenoad.install
 	arch = any
 	license = MIT
@@ -12,7 +12,7 @@ pkgbase = youtubenoad
 	optdepends = chromium: Chromium icin otomatik kurulum
 	optdepends = brave-bin: Brave icin otomatik kurulum
 	optdepends = vivaldi: Vivaldi icin otomatik kurulum
-	source = youtubenoad-1.5.tar.gz::https://github.com/rextroanticheat/YotubeNoAd/archive/refs/tags/v1.5.tar.gz
+	source = youtubenoad-1.5.tar.gz::https://github.com/rextrorexc/YotubeNoAd/archive/refs/tags/v1.5.tar.gz
 	sha256sums = 2592e090d8bc4a84840a73d6c0102ea3d551d0c2e703feb2e9f899afc4e8a052
 
 pkgname = youtubenoad
