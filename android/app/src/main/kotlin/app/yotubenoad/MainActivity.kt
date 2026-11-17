@@ -241,7 +241,7 @@ class MainActivity : Activity() {
             }.start()
     }
 
-    private fun setProgress(p: Int) {
+    private fun updateProgress(p: Int) {
         progress.animate().cancel()
         if (p < 100) {
             progress.alpha = 1f
@@ -290,7 +290,7 @@ class MainActivity : Activity() {
 
     private val chrome = object : WebChromeClient() {
         override fun onProgressChanged(view: WebView, newProgress: Int) {
-            setProgress(newProgress)
+            updateProgress(newProgress)
         }
 
         override fun onShowCustomView(view: View?, callback: CustomViewCallback?) {
@@ -306,7 +306,7 @@ class MainActivity : Activity() {
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
             web.visibility = View.GONE
             shield.visibility = View.GONE
-            setImmersive(true)
+            applyImmersive(true)
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE
         }
 
@@ -318,12 +318,12 @@ class MainActivity : Activity() {
             customCallback = null
             web.visibility = View.VISIBLE
             shield.visibility = View.VISIBLE
-            setImmersive(false)
+            applyImmersive(false)
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
         }
     }
 
-    private fun setImmersive(on: Boolean) {
+    private fun applyImmersive(on: Boolean) {
         val c = WindowCompat.getInsetsController(window, root)
         c.systemBarsBehavior = androidx.core.view.WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         if (on) c.hide(WindowInsetsCompat.Type.systemBars()) else c.show(WindowInsetsCompat.Type.systemBars())
