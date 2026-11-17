@@ -3,3 +3,10 @@ __pycache__/
 *.pkg.tar.*
 src/
 pkg/
+.signing/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.apk
+*.jks
