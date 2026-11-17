@@ -21,6 +21,16 @@ irm https://raw.githubusercontent.com/rextrorexc/YotubeNoAd/main/install.ps1 | i
 
 Ya da projeyi indirip `install.bat` dosyasına çift tıkla. Betik dosyaları `%LOCALAPPDATA%\YotubeNoAd` klasörüne kopyalar, yolu panoya alır ve Chrome, Edge, Brave veya Firefox'un eklenti sayfasını açar. Açılan sayfada **Geliştirici modu** > **Paketlenmemiş öğe yükle** ile yolu yapıştırman yeterli (Firefox'ta **Geçici Eklenti Yükle** ile `manifest.json`).
 
+## Android
+
+1. [YotubeNoAd.apk](https://github.com/rextrorexc/YotubeNoAd/releases/latest/download/YotubeNoAd.apk) dosyasını telefona indir. (En son sürüm bağlantısı çalışmazsa [Releases](https://github.com/rextrorexc/YotubeNoAd/releases) sayfasından `apk-v1.0` sürümünü seç.)
+2. Dosyayı açıp kur. Telefon "bilinmeyen kaynak" izni isterse bu uygulama için izin ver.
+3. Uygulamayı aç. YouTube reklamsız açılır. Sağ alttaki kalkan düğmesi engellemeyi açıp kapatır.
+
+Uygulama YouTube'u kendi içindeki bir tarayıcı penceresinde açar. Google bu pencerelerde giriş yapmayı engellediği için hesabına giriş yapamazsın, ama videoları giriş yapmadan izleyebilirsin.
+
+APK'yı kendin derlemek için: GitHub'da **Actions** sekmesinden **Android APK** akışını çalıştır.
+
 ## Kaynaktan kurulum (Linux)
 
 ```bash
