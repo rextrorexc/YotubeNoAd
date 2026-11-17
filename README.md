@@ -11,6 +11,16 @@ youtubenoad-install
 
 İkinci komut eklentiyi bulunan tarayıcılara ekler. Tek tarayıcı için: `youtubenoad-install firefox` veya `youtubenoad-install chromium`.
 
+## Windows
+
+PowerShell'i aç ve şunu yapıştır:
+
+```powershell
+irm https://raw.githubusercontent.com/rextroanticheat/YotubeNoAd/main/install.ps1 | iex
+```
+
+Ya da projeyi indirip `install.bat` dosyasına çift tıkla. Betik dosyaları `%LOCALAPPDATA%\YotubeNoAd` klasörüne kopyalar, yolu panoya alır ve Chrome, Edge, Brave veya Firefox'un eklenti sayfasını açar. Açılan sayfada **Geliştirici modu** > **Paketlenmemiş öğe yükle** ile yolu yapıştırman yeterli (Firefox'ta **Geçici Eklenti Yükle** ile `manifest.json`).
+
 ## Kaynaktan kurulum (Linux)
 
 ```bash
